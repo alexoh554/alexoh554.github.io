@@ -1,0 +1,25 @@
+.job-box {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 50px; 
+    background-color: #e9ecef;
+}
+
+.job-box:hover {
+    transform: scale(1.03);
+}
+
+.job-box h1 {
+    font-size: 18px;
+}
+  
+.job-box h2 {
+    font-size: 14px;
+
+}
+  
+.job-box p {
+    font-size: 16px;
+}
+  
+

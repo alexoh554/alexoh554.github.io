@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/alexoh.me/static/css/main.2604e6a9.css",
+    "main.js": "/alexoh.me/static/js/main.2b870d44.js",
+    "static/js/787.0923b705.chunk.js": "/alexoh.me/static/js/787.0923b705.chunk.js",
+    "static/media/podium.JPG": "/alexoh.me/static/media/podium.899d503ebc876505e25c.JPG",
+    "static/media/hockey.jpg": "/alexoh.me/static/media/hockey.82aff11042d7bce73be6.jpg",
+    "static/media/ProFeedImg.png": "/alexoh.me/static/media/ProFeedImg.38d50d8db9289f57cc7b.png",
+    "static/media/face.jpeg": "/alexoh.me/static/media/face.bca3bb1b5599db196820.jpeg",
+    "static/media/CS50.png": "/alexoh.me/static/media/CS50.da35c504033ec7d312d2.png",
+    "static/media/JetpackRunImg.png": "/alexoh.me/static/media/JetpackRunImg.29285e6d0b7730322780.png",
+    "static/media/External_Resume.pdf": "/alexoh.me/static/media/External_Resume.ac8a5de355590946e871.pdf",
+    "static/media/hangmanImg.png": "/alexoh.me/static/media/hangmanImg.441de8da65355795e812.png",
+    "static/media/Trig-SolverImg.png": "/alexoh.me/static/media/Trig-SolverImg.61ce642183f7f3658d7b.png",
+    "static/media/slss.jpeg": "/alexoh.me/static/media/slss.4658a348402c7324e676.jpeg",
+    "index.html": "/alexoh.me/index.html",
+    "main.2604e6a9.css.map": "/alexoh.me/static/css/main.2604e6a9.css.map",
+    "main.2b870d44.js.map": "/alexoh.me/static/js/main.2b870d44.js.map",
+    "787.0923b705.chunk.js.map": "/alexoh.me/static/js/787.0923b705.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2604e6a9.css",
+    "static/js/main.2b870d44.js"
+  ]
+}

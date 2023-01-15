@@ -1,0 +1,41 @@
+#face {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#face img {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+
+}
+
+.urlButton {
+    width: 70px;
+    height: 70px;
+    color: #21325e;
+    margin-left: 100px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.urlButton:hover {
+    transform: scale(1.1);
+    box-shadow: 8px rgba(120,120,120,.4);
+}
+
+#title h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.home {
+    text-align: center;
+}
