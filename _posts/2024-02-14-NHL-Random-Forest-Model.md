@@ -2,7 +2,6 @@
 layout: post
 title: Creating a simple NHL Prediction Model using a Random Forest
 tags: [Machine Learning, NHL]
-categories: Demo
 ---
 
 Random Forest is an easy and reliable algorithm that leverages multiple decision trees to predict an outcome. In this project, I used a Random Forest approach to predict the outcomes of NHL hockey games. 
@@ -51,3 +50,20 @@ Using `sklearn`'s `DecisionTreeClassifer` class, I was able to create a Decision
 In this diagram, nodes with a darker blue represent outcomes where the home team is more likely to win and the darker orange represent outcomes where the away team is more likely to win. Nodes that are lighter in shade are less certain of one particular outcome. Samples represents the number of games used at each node, and values shows the split between the away team winning and the home team winning in those games. Gini is a score of a node's impurity, and in this context, it represents the likelyhood of selecting two games from a sample that have the same `homeWin` outcome.
 
 The decision tree maps out sequences of boolean outcomes where we can classify our known data to see if the home team won in that particular matchup. From the above, we can see that there were 113 games where the home team had a lower goals against rate, higher goals for rate, higher short handed goal rate, higher powerplay goal rate, and more total penalty minutes (see far right leaf). In those 113 games, the home team won 84 times, which makes sense, as almost every stat listed were in their favour. 
+
+## Creating a random forest
+A random forest is an ensemble of decision trees that take a random (with replacement) subset of the data. To get a final prediction of an outcome, we take the average of the predictions from all of the models. This is more accurate than using one decision tree, because the average of a large number of uncorrelated random errors is 0. Creating a random tree is quite simple using the `sklearn` `RandomForestClassifier` class. 
+
+After creating a random forest I plotted the feature importance of the model:
+![feature importance](https://raw.githubusercontent.com/alexoh554/nhl-prediction-model/main/visuals/feature_importance.png)
+The most important factors for predicting games in my model were goals against average, shots per game, and goals per game. Special teams and penalty minutes had low importance in my model.
+
+For the test set, I fetched the scores (approx. 800 games) up until today's (02-14-2024) date in the current NHL season and fetched this season's stats for each team (using the same functions as before). I used the `predict` method for the `RandomForestClassifier` class, which produced a ~800x1 matrix of boolean values `homeWin`. I then compared these predictions to the actual results of the games, which gave me my accuracy score.
+
+## Accuracy
+The accuracy of my model in prediction NHL games was `0.5702280912364946`, or 57%. While this does seem quite low, note that the favourites in sportsbooks for hockey have a win rate of approximately [60%](https://www.olbg.com/us/blogs/nhl-betting-strategies-how-often-do-nhl-betting-favorites-wins). So by using a very simple random forest, I created a model that predicted games on par with the sportsbooks. 
+
+## Conclusion
+There are many ways this model could be improved to ultimately be used for profit (betting). First, the dataset in the NHL API is quite limited, and additional stats such as faceoff percentage, powerplay percentage, and penalty kill percentage could have been very useful in the model. Second, since every feature was a boolean value, the decision trees were not as sensitive to scaling. For example, shooting 10 more shots per game vs shooting 1 more shot per game would have the same outcome in the decision tree. However, the boolean variables were useful for the sake of simplicity and understanding.
+
+For future work, I will scrape additional stats for a more diverse dataset. I will also try different models to see which model is best suited for a sports prediction problem.
