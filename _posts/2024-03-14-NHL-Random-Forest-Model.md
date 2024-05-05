@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a simple NHL Prediction Model using a Random Forest
-tags: [Machine Learning, NHL]
+tags: [Machine Learning, NHL, Random Forest]
 ---
 
 Random Forest is an easy and reliable algorithm that leverages multiple decision trees to predict an outcome. In this project, I used a Random Forest approach to predict the outcomes of NHL hockey games. 
