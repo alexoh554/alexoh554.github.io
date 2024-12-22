@@ -6,7 +6,7 @@ tags: [Project, Systems Design, Hackathon]
 During my internship at Trend Micro, I created a fully-integrated Slackbot to automate company raffles and showcased it to the company. This was a great project to learn about AWS architecture, serverless computing, and API integration.
 
 ## Motivation
-Trend Micro hosts tri-annual "Hack Days", days where developers are encouraged to work on and share a project. Ideas can be anything - some make useful tools for productivity, while others may work on technical debt or workflow optimizations. This was one of the great showcases of Trend Micro's continuous learning work culture and how it benefits everyone. Developers like myself can learn new skills and the company can also benefit greatly from some of these projects (one team worked on migrating a huge repository to a newer programming language).
+Trend Micro hosts tri-annual "Hack Days", days where developers are encouraged to work on and share a project. Ideas can be anything - some make useful tools for productivity, while others may work on technical debt or workflow optimizations. This was one of the great showcases of Trend Micro's continuous learning work culture and how it benefits everyone. Developers like myself can learn new skills and the company can also benefit greatly from some of these projects (one team worked on migrating a huge repository to a newer version of a programming language).
 
 One of the perks of working at Trend Micro is the Ottawa Senators ticket raffles. For every game, employees can email an HR organizer to be entered in a draw. Near the day of the game, winners are notified via email or teams. 
 
@@ -139,5 +139,7 @@ This feature seemed to impress the most people during our interactive demo. Our 
 
 ## Conclusion
 Participating in Hack Day was a very rewarding experience as I got to apply what I learned during my internship (particularly with AWS Lambdas) to create a useful Slack app. Of course, there are ways to make this more robust - one limitation of the app is that a single user creating multiple raffles may have trouble ending their desired raffle. In the end, we had a working solution that didn't run into any problems - even with 35+ people testing it during our demo. 
+
+A project that I really enjoyed was a Microsoft Teams add-on that calculated the "true" cost of hosting a meeting based on the attendees (estimated) salaries. Another project was a spinoff daily "-dle" game, where players can guess the story points of randomly selected JIRA issues from our organization. 
 
 My experience at Trend Micro was very special especially due to events such as this hackathon, a company-wide CTF, and weekly mentorship sessions catered to co-op students. These events really motivated me to learn new technologies and concepts.
