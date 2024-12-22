@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Cake
 feature-img: "assets/img/portfolio/cake.png"
@@ -18,4 +18,4 @@ Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil 
 vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 
 Use this area of the page to describe your project. 
-The icon above is part of a free icon set by Flat Icons. 
+The icon above is part of a free icon set by Flat Icons.  -->

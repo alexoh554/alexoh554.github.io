@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 feature-img: "assets/img/pexels/travel.jpeg"
-tags: [Page]
+tags: 
 ---
 
 My name is Alex Oh and I am currently studying in the Computer Engineering program at the University of Waterloo. I am interested in many topics including Software Engineering, Machine Learning, and Computer Hardware. Technology is my passion and I am always learning new things!
