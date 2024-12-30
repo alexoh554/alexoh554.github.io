@@ -49,16 +49,13 @@
     <!-- Simple Jekyll Search 1.10.0 -->
     <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV759R9TGN"></script>
+    <!-- Google Analytics / Cookie Consent -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QV759R9TGN');
+      const cookieName = 'cookie-notice-dismissed-{{ site.url }}';
+      const isCookieConsent = '{{ site.cookie_consent }}';
+      const analyticsName = '{{ site.google_analytics }}';
+      const analyticsNameGA4 = '{{ site.google_analytics_ga4 }}';
     </script>
-
 
     {% if site.cookie_consent %}
         <span id="cookie-notice"><span>{{ site.data.language.str_cookie_disclaimer | default: "We would like to use third party cookies and scripts to improve the functionality of this website." }}
