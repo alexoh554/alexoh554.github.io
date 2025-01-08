@@ -12,6 +12,10 @@ One of the perks of working at Trend Micro is the Ottawa Senators ticket raffles
 
 Someone on my hackathon team had the great idea of simplifying this tedious email process and making it easier for the HR team to manage entrants. We thought a Slack bot would be a fun and interactive way for employees to participate in the frequent raffles. Because of this, we created Cyber SweepStakes.
 
+<div style="text-align: center;">
+  <img src="/attachments/2024-12-19-attachments/titleimg.png" alt="createraffle">
+</div>
+
 ## Design Decisions
 Using the Slack API to create a Slack bot is fairly straightforward. You can obtain a Webhook URL as an endpoint to send messages (via HTTP POST requests) to a channel in your workspace. Setting up slash commands is also easy - you need to provide the endpoint of your app/function that Slack will send requests to.
 
